@@ -16,17 +16,17 @@ function setup() {
     canvas = document.querySelector("canvas");
     context = canvas.getContext("2d");
 
-    for (let i = 0; i < w; i++) {
-        board[i] = Array(boardSize);
-    }
+    // for (let i = 0; i < w; i++) {
+    //     board[i] = Array(boardSize);
+    // }
 
-    for (let i = 0; i < w; i++) {
-        for (let j = 0; j < h; j++) {
-            board[i][j] = createSprite(i+squareSize, j+squareSize, squareSize, squareSize);
-            board[i][j].shapeColor = color("lightblue");
-            board[i][j].immovable = true;
-        }
-    }
+    // for (let i = 0; i < w; i++) {
+    //     for (let j = 0; j < h; j++) {
+    //         board[i][j] = createSprite(i+squareSize, j+squareSize, squareSize, squareSize);
+    //         board[i][j].shapeColor = color("lightblue");
+    //         board[i][j].immovable = true;
+    //     }
+    // }
 
     drawBoard();
 
