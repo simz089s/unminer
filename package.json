@@ -1,0 +1,23 @@
+{
+  "name": "unminer",
+  "version": "0.0.1",
+  "description": "JavaScript minesweeper.",
+  "main": "unminer.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "nodejs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simz089s/unminer.git"
+  },
+  "author": "SZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simz089s/unminer/issues"
+  },
+  "homepage": "https://github.com/simz089s/unminer#readme",
+  "dependencies": {
+    "p5": "^0.7.1"
+  }
+}

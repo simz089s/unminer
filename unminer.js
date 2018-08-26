@@ -1,3 +1,5 @@
+const p5 = require('p5');
+
 const boardSize = 6;
 const squareSize = 50;
 const squareRadius = 5;
@@ -18,22 +20,22 @@ function setup() {
     canvas = document.querySelector("canvas");
     canvas.oncontextmenu = () => { return false; }
     context = canvas.getContext("2d");
-    
+
     for (let i = 0; i < w; i++) {
         board[i] = Array(boardSize);
         for (let j = 0; j < h; j++) {
             board[i][j] = { col: color("lightblue"), val: Math.round(Math.random() * 3.5)-1 };
         }
     }
-    
+
     for (let i = 0; i < w; i++) {
         for (let j = 0; j < h; j++) {
             if (board[i][j].val !== -1) { board[i][j].val = calcVal(i, j); }
         }
     }
-    
+
     drawBoard();
-    
+
     noLoop();
 }
 
