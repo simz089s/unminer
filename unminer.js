@@ -1,5 +1,3 @@
-const p5 = require('p5');
-
 const boardSize = 6;
 const squareSize = 50;
 const squareRadius = 5;
